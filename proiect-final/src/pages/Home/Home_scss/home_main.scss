@@ -1,0 +1,39 @@
+@import "../../../Scss_files/main.scss";
+
+main {
+    height: 100vh;
+    background-image: url("../../../Assets/home_main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+    .mainFlex {
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mainContent {
+            text-align: center;
+    
+            h1 {
+                font-size: 48px;
+            }
+    
+            h3 {
+                padding-top: 1em;
+                font-size: 24px;
+                color: $brownColor;
+            }
+    
+            button {
+                @include buton();
+    
+                a {
+                    @include aButon()
+                }
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,10 @@
+$mainFont: 'Karantina', cursive;
+$secondaryFont: 'Zilla Slab', serif;
+
+* {
+    font-family: $secondaryFont;
+}
+
+h1,h2,h3,h4,h5,h6,a {
+    font-family: $mainFont
+}

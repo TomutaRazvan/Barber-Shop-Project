@@ -1,0 +1,62 @@
+@import "../../../Scss_files/main.scss";
+
+.servicesSection {
+    margin: 2em 0;
+
+    .servicesTitle {
+        margin-bottom: 1em;
+        text-align: center;
+
+        h4 {
+            color: $brownColor;
+            font-size: 24px;
+        }
+
+        h3 {
+            padding-top: .5em;
+            font-size: 30px;
+        }
+    }
+
+    .servicesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .servicesBox {
+            width: 80%;
+            margin: 1em 0;
+            padding: 1em;
+            background-color: #1C1C1C;
+            text-align: center;
+            
+            @include viewport(600px) {
+                width: 30%;
+            }
+
+
+            h3 {
+                color: white;
+            }
+
+            h4 {
+                margin: 1em 0;
+                color: white;
+
+            }
+        }
+    }
+
+    .servicesButton {
+        text-align: center;
+        
+        button {
+            @include buton();
+            border: 1px solid black;
+
+            a {
+                @include aButon();
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import "../../../Scss_files/main.scss";
+
+.form {
+    margin-bottom: 3em;
+
+    h2 {
+        margin: 3em 0 1em;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            border: 2px solid #E5E5E5;
+            width: 60%;
+            padding: 1em .2em;
+            margin-bottom: 1em;
+
+            @include viewport(600px) {
+                width: 30%;
+                padding: 1em;
+            }
+        }
+
+        textarea {
+            border: 2px solid #E5E5E5;
+            width: 60%;
+            padding: 2em .2em;
+            margin-bottom: 1em;
+
+            @include viewport(600px) {
+                width: 30%;
+                padding: 5em 1em;
+            }
+        }
+    }
+
+    .message {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: green;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .display {
+        display: block;
+    }
+}

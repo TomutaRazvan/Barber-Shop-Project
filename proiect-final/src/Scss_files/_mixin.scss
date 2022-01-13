@@ -1,0 +1,18 @@
+@mixin buton() {
+    margin-top: 2em;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@mixin aButon() {
+    display: block;
+    padding: 1em 2em;
+    font-size: 20px;
+    color: white;
+}
+
+@mixin viewport ($width) {
+    @media only screen and (min-width: $width) {
+        @content
+    }
+}

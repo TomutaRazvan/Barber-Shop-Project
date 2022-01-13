@@ -1,0 +1,37 @@
+@import "../Scss_files/main.scss";
+
+footer {
+    background-color: #1C1C1C;
+    padding: 1em 0;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .footerBox {
+        margin: 1em 0;
+        width: 100%;
+
+        a {
+            color: white;
+            font-size: 20px;
+        }
+
+        h4 {
+            color: $brownColor;
+            font-size: 20px;
+        }
+
+        span {
+            color: white;
+        }
+    }
+}
+
+.footerCopyright {
+    text-align: center;
+    color: white
+}

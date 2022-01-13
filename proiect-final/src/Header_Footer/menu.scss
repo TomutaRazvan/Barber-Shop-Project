@@ -1,0 +1,28 @@
+@import "../Scss_files/main.scss";
+
+header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include viewport(600px) {
+        padding: 2em 5em;
+    }
+
+    .logo {
+        img {
+            width: 100px;
+            height: 50px;
+        }
+    }
+
+    nav {
+        a {
+            border: 1px solid white;
+            padding: .2em .5em;
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
