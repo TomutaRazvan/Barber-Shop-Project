@@ -1,37 +1,105 @@
 @import "../../../Scss_files/main.scss";
 
-main {
-    height: 100vh;
+.homeMain {
     background-image: url("../../../Assets/home_main_bg.jpg");
     background-position: center;
     background-size: cover;
     color: white;
+
+    @include viewport(1400px) {
+        height: 100vh;
+    }
     
     .mainFlex {
-        height: 80%;
+        padding: 100px 0;
         display: flex;
         align-items: center;
         justify-content: center;
 
+        @include viewport(1400px) {
+            height: 60%;
+        }
+
         .mainContent {
             text-align: center;
-    
-            h1 {
-                font-size: 48px;
-            }
-    
-            h3 {
-                padding-top: 1em;
-                font-size: 24px;
+
+            .titleSpan {
+                font-family: $mainFont;
+                font-size: 72px;
                 color: $brownColor;
+
+                @include viewport(1200px){
+                    font-size: 88px;
+                }
+            }
+
+            .slogan {
+                padding: 1em 0;
+
+                span {
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #cccccc;
+                }
             }
     
             button {
                 @include buton();
     
                 a {
-                    @include aButon()
+                    @include aButon();
+                    
+                    color: white;
                 }
+            }
+        }
+    }
+
+    .mainContact {
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        @include viewport(1400px) {
+            height: 20%;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 1px rgba(220, 163, 78, 0.432) solid;
+            width: 100%;
+        }
+
+        @include viewport(1200px) {
+            padding: 25px 0;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        @include viewport(1400px) {
+            justify-content: center;
+        }
+
+        div {
+            padding: 20px 0;
+            text-align: center;
+
+            @include viewport(1400px) {
+                padding: 20px 30px;
+            }
+
+            h3 {
+                padding-bottom: 10px;
+                color: $brownColor;
+            }
+
+            span {
+                font-weight: 700;
             }
         }
     }

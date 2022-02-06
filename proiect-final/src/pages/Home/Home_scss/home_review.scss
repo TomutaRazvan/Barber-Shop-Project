@@ -1,0 +1,79 @@
+@import "../../../Scss_files/main.scss";
+
+.reviewSection {
+    background-image: url("../../../Assets/review_bg_1.jpg");
+
+    .reviewContainer {
+        padding: 40px 20px 50px;
+        text-align: center;
+
+        @include viewport(1400px) {
+            padding: 50px 20px 75px;
+        }
+
+        h3 {
+            position: relative;
+            display: inline-block;
+        
+            &:after {
+            content: "";
+            position: absolute;
+            bottom: -25%;
+            left: 1%;
+            border-bottom: 5px $brownColor solid;
+            width: 96%;
+            }
+        }
+
+        .reviewContent {
+            margin: 0 auto;
+            text-align: left;
+
+            @include viewport(768px) {
+                width: 80%;
+            }
+
+            @include viewport(992px) {
+                padding: 25px 0;
+            }
+
+            @include viewport(1200px) {
+                width: 70%;
+            }
+
+            @include viewport(1400px) {
+                width: 50%;
+            }
+
+            p {
+                padding: 40px 0 30px;
+            }
+
+            h5 {
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+
+        .reviewButtons {
+            padding: 25px 0 10px;
+
+            a {
+                margin: 0 5px;
+                display: inline-block;
+                padding: 25px 30px;
+                background-color: black;
+
+                i {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: $brownColor;
+                }
+
+                transition: background-color .25s;
+            }
+        }
+    }
+}

@@ -1,57 +1,273 @@
 @import "../../../Scss_files/main.scss";
 
-.form {
-    margin-bottom: 3em;
 
-    h2 {
-        margin: 3em 0 1em;
-        font-size: 30px;
+.form {
+    padding: 3em 0;
+    position: relative;
+
+    @include viewport(1400px) {
+        background-image: url("../../../Assets/form_bg.png");
+        background-size: 300px 400px;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-bottom: 100px;
+    }
+
+    .formTitle {
         text-align: center;
+
+        h3 {
+            margin: 3em 0 1em;
+            position: relative;
+            display: inline-block;
+    
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -25%;
+                left: 1%;
+                border-bottom: 5px $brownColor solid;
+                width: 96%;
+            }
+        }
     }
 
     form {
+        width: 85%;
+        margin: 50px auto 75px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+
+        @include viewport(992px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include viewport(1400px) {
+            width: 50%;
+            margin-top: 75px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 3px solid #E5E5E5;
+            transition: border-color .25s;
+
+            @include viewport(992px) {
+                width: 48%;
+            }
+        }
 
         input {
-            border: 2px solid #E5E5E5;
-            width: 60%;
-            padding: 1em .2em;
-            margin-bottom: 1em;
+            font-size: 16px;
+            appearance: none;
+            
+            &[type=number] {
+                appearance: textfield;
+            }
 
-            @include viewport(600px) {
-                width: 30%;
-                padding: 1em;
+            &::placeholder {
+                color: rgba(128, 128, 128, 0.863)
+            }
+
+            &[type=submit] {
+                width: 50%;
+                display: block;
+                margin: 10px auto 20px;
+                border: none;
+                background-color: $brownColor;
+                color: white;
+                cursor: pointer;
+                font-family: $mainFont;
+                font-size: 24px;
+                letter-spacing: 3px;
+
+                &:hover {
+                    background-color: #C9800F;
+                }
+
+                transition: background-color .25s;
+
+                @include viewport(992px) {
+                    width: 40%;
+                    margin-top: 25px;
+                }
+
+                @include viewport(1200px) {
+                    width: 30%;
+                }
+            }
+
+            &:focus {
+                outline: none;
+                border: 3px solid $brownColor;
             }
         }
 
-        textarea {
-            border: 2px solid #E5E5E5;
-            width: 60%;
-            padding: 2em .2em;
-            margin-bottom: 1em;
+        select {
+            background-color: white;
+            font-size: 16px;
 
-            @include viewport(600px) {
-                width: 30%;
-                padding: 5em 1em;
+            &:focus {
+                outline: none;
+                border: 3px solid $brownColor;
             }
         }
     }
 
-    .message {
+    .paymentForm {
         display: block;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        color: green;
-    }
+        width: 90%;
+        padding: 15px;
+        border: 2px solid #E5E5E5;
+        border-radius: 5px;
+        box-shadow: 0 5px 55px rgb(0 0 0 / 0.2);
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        z-index: 999;
 
-    .hide {
+        @include viewport(576px) {
+            width: 60%;
+            padding: 25px;
+            left: 20%;
+        }
+
+        @include viewport(992px) {
+            width: 40%;
+            padding: 30px;
+            left: 30%;
+        }
+
+        @include viewport(1200px) {
+            width: 30%;
+            padding: 50px 40px 25px;
+            left: 35%;
+        }
+
+        input {
+            @include viewport(992px) {
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+
+        div {
+            width: 100%;
+            
+            input {
+                margin-top: 5px;
+            }
+        }
+
+        .numberInputs {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 23%;
+            }
+        }
+
+        .paymentFlexDiv {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                width: 40%;
+
+                &:nth-of-type(2) {
+                    width: 30%;
+                }
+
+                @include viewport(576px) {
+                    width: 40%;
+                }
+            }
+
+            .dateInputs {
+                width: 100%;
+                display: flex;
+                margin: 5px 0 0 0;
+                padding: 5px;
+                border: 3px solid #E5E5E5;
+
+                @include viewport(1200px) {
+                    width: 80%;
+                }
+    
+                select {
+                    display: inline-block;
+                    width: 100%;
+                    margin: 0;
+                    border: none;
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
+//----- Form functions
+
+.formErrors {
+    width: 100%;
+
+    p {
+        color: rgb(255, 0, 0);
         display: none;
     }
+}
 
-    .display {
-        display: block;
+.paymentErrors {
+    width: 100%;
+
+    p {
+        color: rgb(255, 0, 0);
+        display: none;
     }
+}
+
+.showClass {
+    display: block !important;
+}
+
+.showFlex {
+    display: flex !important;
+}
+
+.hideClass {
+    display: none !important;
+}
+
+
+.backgroundColor {
+    border: 3px solid #fa000079;
+    box-shadow: 0 0 5px #ff0000;
+
+    &:focus {
+        outline: none;
+        border: 3px solid #fa000079;
+    }
+}
+
+.absoluteDiv {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.request {
+    padding: 100px 0;
+    text-align: center;
+    color: green;
 }

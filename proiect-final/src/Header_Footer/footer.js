@@ -8,23 +8,38 @@ export function Footer() {
         <footer>
 
             <div className="footerSection">
-                <div className="footerBox">
-                    <h4>OUR LOCATION</h4>
+                <div className="footerLeft">
+                    <h4>CONTACT US</h4>
+
+                    <a href="mailto:tomuta.razvan1@gmail.com">tomuta.razvan1@gmail.com</a> <br/>
+                    <a href="tel:+40753892923">+40 753 892 923</a>
+                </div>
+
+                <div className="footerRight">
+                    <h4>VISIT US</h4>
 
                     <span>9779 Woodside Drive <br/>
                         Granger, IN 46530 </span>
                 </div>
 
-                <div className="footerBox">
-                    <h4>Contact</h4>
-
-                    <a href="mailto:webmaster@example.com">tomuta.razvan1@gmail.com</a> <br/>
-                    <a href="tel:5551234567">0438 439 341</a>
-                </div>
             </div>
 
-            <div className="footerCopyright">
+            <div className="footerBottom">
                 <p>Copyright © 2021 Barbero. All rights reserved </p>
+
+                <div className="socialIcons">
+                    <a href="/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+
+                    <a href="/">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </div>
             </div>
 
         </footer>

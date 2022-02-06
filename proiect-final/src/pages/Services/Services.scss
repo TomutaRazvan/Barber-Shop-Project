@@ -1,0 +1,156 @@
+@import "../../Scss_files/main.scss";
+
+.servicesMain {
+    div {
+        background-image: url("../../Assets/services_bg.jpg");
+        background-size: cover;
+        background-position: center;
+
+        h1 {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.serviceSection {
+    padding: 50px 0;
+
+    .serviceContainer {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+            @include viewport(1400px) {
+                margin-bottom: 25px;
+            }
+        }
+
+        @include viewport(576px) {
+            width: 80%;
+        }
+
+        @include viewport(768px) {
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        @include viewport(1400px) {
+            width: 70%;
+        }
+
+        .serviceBox {
+            width: 100%;
+            margin: 40px 0 25px;
+
+            @include viewport(768px) {
+                width: 45%;
+            }
+
+            @include viewport(1100px) {
+                width: 30%;
+            }
+
+            img {
+                height: 400px;
+                width: 100%;
+
+                @include viewport(576px) {
+                    height: 500px;
+                }
+
+                @include viewport(768px) {
+                    height: 400px;
+                }
+
+                @include viewport(992px) {
+                    height: 500px;
+                }
+
+                @include viewport(1100px) {
+                    height: 350px;
+                }
+            }
+        
+            h5 {
+                padding: 10px 0;
+
+                &:nth-of-type(2) {
+                    padding: 0 0 10px 0;
+                    color: $brownColor;
+                }
+            }
+
+            span {
+                font-size: 16px;
+                color: #666666;
+            }
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+            .serviceBox {
+                @include viewport(1100px) {
+                    width: 22%;
+                }
+            }
+        }
+    }
+
+    h2 {
+        padding-top: 50px;
+        text-align: center;
+
+        @include viewport(768px) {
+            margin-left: 5%;
+            font-size: 48px;
+            text-align: left;
+        }
+
+        @include viewport(1100px) {
+            font-size: 60px;
+            margin-left: 5%;
+        }
+
+        @include viewport(1400px) {
+            margin-left: 15%;
+        }
+    }
+}
+
+
+.boxBackground,
+.boxBackground2 {
+    height: 460px;
+    background-image: url("../../Assets/service-pic7.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-content: flex-end;
+    padding: 0 15px 25px;
+    color: white;
+
+    @include viewport(768px) {
+        width: 100% !important;
+    }
+
+    @include viewport(1100px) {
+        width: 50% !important;
+    }
+
+    span {
+        color: white !important;
+    }
+}
+
+.boxBackground2 {
+    background-image: url("../../Assets/service-pic8.jpg");
+}

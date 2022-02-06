@@ -1,3 +1,6 @@
+@import "./colors";
+@import "./mixin";
+
 $mainFont: 'Karantina', cursive;
 $secondaryFont: 'Zilla Slab', serif;
 
@@ -7,4 +10,80 @@ $secondaryFont: 'Zilla Slab', serif;
 
 h1,h2,h3,h4,h5,h6,a {
     font-family: $mainFont
+}
+
+
+// ---PARAGRAPHS
+
+p {
+    font-size: calc(18em/16);
+    line-height: 30px;
+    color: $textColor
+}
+
+
+// ---HEADERS
+
+h1 {
+    font-size: calc(64em/16);
+
+    @include viewport(1400px){
+        font-size: calc(80em/16);
+    }
+}
+
+h2 {
+    font-size: calc(36em/16);
+
+    @include viewport(992px){
+        font-size: calc(40em/16);
+    }
+
+    @include viewport(1200px){
+        font-size: calc(44em/16);
+    }
+
+    @include viewport(1400px){
+        font-size: calc(60em/16);
+    }
+}
+
+h3 {
+    font-size: calc(24em/16);
+    font-weight: 400;
+    letter-spacing: .2em;
+
+    @include viewport(992px){
+        font-size: calc(28em/16);
+    }
+
+    @include viewport(1200px){
+        font-size: calc(32em/16);
+    }
+}
+
+h4 {
+    font-size: calc(18em/16);
+    font-weight: 400;
+
+    @include viewport(992px){
+        font-size: calc(20em/16);
+    }
+
+    @include viewport(1200px){
+        font-size: calc(22em/16);
+    }
+}
+
+h5 {
+    font-size: calc(30em/16);
+    font-weight: 400;
+
+    @include viewport(992px){
+        font-size: calc(34em/16);
+    }
+
+    @include viewport(1200px){
+        font-size: calc(36em/16);
+    }
 }

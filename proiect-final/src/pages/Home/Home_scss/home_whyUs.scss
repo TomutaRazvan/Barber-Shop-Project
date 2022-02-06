@@ -1,0 +1,75 @@
+@import "../../../Scss_files/main.scss";
+@import "../../../Scss_files/main.scss";
+
+.whyUsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include viewport(1400px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    div {
+        width: 90%;
+
+        @include viewport(1400px) {
+            width: 45%;
+        }
+    }
+
+    .leftSection {
+        padding: 3em 1em;
+        background-color: #1C1C1C;
+        text-align: center;
+
+        h3 {
+            display: inline-block;
+            position: relative;
+            color: white;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -25%;
+                left: 1%;
+                border-bottom: 5px $brownColor solid;
+                width: 96%;
+            }
+        }
+
+        h2 {
+            padding: .8em 0;
+            color: white;
+        }
+
+        p {
+            color: #999999;
+
+            @include viewport(992px) {
+                padding: 0 5em;
+            }
+        }
+
+        a {
+            @include linkButton
+        }
+    }
+
+    .rightSection {
+        background-image: url("../../../Assets/whyus_bg.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+
+        @include viewport(992px) {
+            height: 400px;
+        }
+
+        @include viewport(1400px) {
+            height: 600px;
+        }
+    }
+}
