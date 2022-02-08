@@ -6,6 +6,8 @@ A website for a barbershop where you can see their services and make an appointm
 
 ## 💡 Built using
 
+The website was built using the method **mobile first** and is fully responsive.
+
 - React
 - React Hooks
 - JSX
