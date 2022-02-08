@@ -77,7 +77,6 @@ export const HomeForm =  forwardRef((props, ref) => {
         if(name.match(regexLetters) && phone.match(regexNumbers)) {
             setShowPayment("paymentForm");
             setBackgroundPayment("absoluteDiv");
-            document.querySelector("body").style.backgroundColor = "rgba(128, 128, 128, 0.192)";
         } else {
             setShowPayment("hideClass")
         }
@@ -174,7 +173,6 @@ export const HomeForm =  forwardRef((props, ref) => {
 
             setShowPayment("hideClass");
             setBackgroundPayment("hideClass");
-            document.querySelector("body").style.backgroundColor = "white";
             setShowForm("hideClass");
             setSubmitMessage("showClass")
 
