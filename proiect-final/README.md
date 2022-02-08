@@ -14,7 +14,7 @@ A website for a barbershop where you can see their services and make an appointm
 
 ## 📱 Screenshots
 
-
+![This is an image](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/af429a47e13318103d8611b9cd57c84dd32d41bf/proiect-final/Screenshots/main%20pc.PNG)
 
 
 
