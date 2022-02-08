@@ -14,7 +14,25 @@ A website for a barbershop where you can see their services and make an appointm
 
 ## 📱 Screenshots
 
-![This is an image](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/af429a47e13318103d8611b9cd57c84dd32d41bf/proiect-final/Screenshots/main%20pc.PNG)
+![Mobile main](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/main%20mobile.PNG)
+
+![Mobile services](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/services%20mobile.PNG)
+
+![Mobile reviews](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/review%20mobile.PNG)
+
+![PC main](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/af429a47e13318103d8611b9cd57c84dd32d41bf/proiect-final/Screenshots/main%20pc.PNG)
+
+![PC services](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/services%20pc.PNG)
+
+![Mobile form](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/form%20mobile.PNG)
+
+![PC form](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/form%20pc.PNG)
+
+![Form errors](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/form%20errors.PNG)
+
+![Payment form](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/payment.PNG)
+
+![Payment errors](https://github.com/TomutaRazvan/Barber-Shop-Project/blob/bb66ec726eff959a0e3d79ddf4b31dc466384973/proiect-final/Screenshots/payment%20errors.PNG)
 
 
 
